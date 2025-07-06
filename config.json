@@ -1,0 +1,27 @@
+{
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{
+        "id": "3AC268CA-ECCC-437B-89BA-3C19FFEB9B49",
+        "level": 0,
+        "email": "test@vless.com"
+      }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "tls",
+      "tlsSettings": {
+        "certificates": [{
+          "certificateFile": "/app/cert.pem",
+          "keyFile": "/app/key.pem"
+        }]
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom"
+  }]
+}
